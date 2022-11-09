@@ -1,0 +1,27 @@
+name: Submit to havard CS50 repository
+
+on:
+  push:
+    branches:
+        - 'web50/projects/2020/x/**'
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{secrets.PERSONAL_ACCESS_TOKEN}}
+          fetch-depth: 0
+      - name: Configure git
+        run: |
+          git config --global user.name 'Arthur Henrique Della Fraga'
+          git config --global user.email 'Arthur.Henrique.Della.Fraga@gmail.com'
+      - name: Submit project
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          repository: me50/artu-hnrq
+          branch: ${{ github.ref }}
+          force: true
