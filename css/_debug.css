@@ -1,0 +1,36 @@
+nav,
+footer {
+    background-color: lightgrey;
+}
+
+header {
+    background-color: deeppink;
+}
+
+main {
+    background-color: lightpink;
+}
+
+menu {
+    background-color: gold;
+}
+
+menu > li {
+    background-color: lightyellow;
+}
+
+menu > span {
+    background-color: lightgrey;
+}
+
+section {
+    background-color: lightskyblue;
+}
+
+section > * {
+    background-color: whitesmoke;
+}
+
+form {
+    background-color: yellow;
+}

@@ -80,12 +80,18 @@ After that, every push to a branch which name starts with `web50/projects/2020/x
 - [ ] The CSS you write should resemble Google’s own aesthetics.
 
 ### Folder structure
-For this project, the important file is `index.html`, which holds the main structure of your website home page. 
+For this project, the important files are:
+ - `index.html`, which holds the main structure of your website home page
+ - `css/style.css`, that contain the website stylesheet entrypoint
+ - `js/script.js`, carrying this website logic
 
 ```
 .
 ├── .git/                       Version control system folder
 ├── .github/                    Repo continuous automation 
+├── css/                        Website stylesheets
+├── img/                        Website image directory
+├── js/                         Website scripts
 ├── .gitignore                  VCS ignored files manifest
 ├── CHANGELOG.md                Release notes description
 ├── index.html                  Website home page
