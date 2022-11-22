@@ -1,0 +1,88 @@
+:root {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+
+    position: absolute;
+    inset: 0;
+
+    background-color: white;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.flex {
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: flex-start;
+    place-items: flex-start center;
+
+    min-height: 100vh;
+
+    text-align: center;
+}
+
+nav,
+header,
+main,
+footer {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: stretch;
+
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    flex: auto;
+}
+
+menu,
+section {
+    display: flex;
+    place-content: center flex-start;
+    place-items: center;
+
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+}
+
+menu {
+    list-style-type: none;
+}
+
+menu > li > * {
+    padding: 0 1rem;
+
+    color: black;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+menu > span {
+    flex: auto;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid lightgrey;
+}
