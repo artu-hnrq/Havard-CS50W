@@ -1,21 +1,18 @@
-# Harvard CS50W Course Projects
+# Project 0: Search
+*[Harvard CS50W Course][1]*
 
-Here you will find all my submissions of
-**Harvard CS50's Web Programming with Python and JavaScript** [2020 course][1] projects.
+This project requires the development of a static website, resembling google search.
+Throughout it, student's knowledge of several HTML elements usage, as well as its styling,
+and yet HTTP GET requests and query param will be put to the test.
 
-> This repository also suits as a template for other students 
-interested on an organized beginning for their projects repo structure.
+Refer to the [complete assignment description][P0] for more details.
 
 [>1]: https://www.repostatus.org "Repo maintenance status"
 [>2]: https://choosealicense.com/licenses/gpl-3.0/ "GPL 3.0 License description"
 
 [1]: https://cs50.harvard.edu/web/2020/ "Havard CS50W 2020 course"
-[2]: https://docs.github.com/en/actions/security-guides/encrypted-secrets "Github: Encripted secrets"
-[3]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token "Github: Creating a personal access token"
+[P0]: https://cs50.harvard.edu/web/2020/projects/0/search/ "Project 0: statement"
 
-[!0]: https://github.com/artu-hnrq/havard-cs50w/generate "Github repository's template generation URL"
-
-[B0]: https://img.shields.io/static/v1?label=create%20a%20new%20repository&message=%20&style=social "Create new repository"
 [B1]: https://www.repostatus.org/badges/latest/concept.svg "Repostatus active badge"
 [B2]: https://img.shields.io/github/license/artu-hnrq/havard-cs50w?color=green "License badge"
 
@@ -35,22 +32,20 @@ interested on an organized beginning for their projects repo structure.
 
 
 ## Getting started
-First of all, [![create a new repository][B0]][!0] from this template, \
-name it accordingly and place where it best fits for you. \
-Remember to check in all desired branches before confirm!
+As a static website, it doesn't take much to get started.
+Just access the `index.html` through you preferred browser,
+and you'll be ready to go!
+
 
 ### Development environment
-Make sure you have `Git` installed, as wel as `Python` will also be needed:
+You'll still need to have `Git` installed, though:
 
 ```bash
 $ git --version
 git version 2.25.1
-$ python3 --version
-Python 3.10.6
 ```
 
-Thus, clone the recent-created repository locally,
-and you'll be ready to start developing your projects.
+Thus, clone this repository locally, and you can start developing your project.
 
 ### Continuos automation
 Project submission is automated through a *submit-on-push* GitHub Action.
@@ -64,38 +59,28 @@ After that, every push to a branch which name starts with `web50/projects/2020/x
 
 
 ## Project specifications
-[Harvard CS50W][1] is divided into **9 lectures**, summing up **6 projects**.
+*From [project's statement][P0]:* \
+**Your website must meet the following requirements:**
 
-Each project has an associated initial *distribution code*, available for download along with its description,
-which are already placed in each equivalent branch of this repo. Check them out:
-
-|   #   | Project statement |            Branch            |
-|:-----:|:-----------------:|:----------------------------:|
-|   0   |   [Search][P0]    |     [0-search][0-search]     |
-|   1   |    [Wiki][P1]     |       [1-wiki][1-wiki]       |
-|   2   |  [Commerce][P2]   |   [2-commerce][2-commerce]   |
-|   3   |    [Mail][P3]     |       [3-mail][3-mail]       |
-|   4   |   [Network][P4]   |    [4-network][4-network]    |
-| Final |  [Capstone][P*]   | [final-capstone][*-capstone] |
-
-[P0]: https://cs50.harvard.edu/web/2020/projects/0/search/ "Project 0: statement"
-[P1]: https://cs50.harvard.edu/web/2020/projects/1/wiki/ "Project 1: statement"
-[P2]: https://cs50.harvard.edu/web/2020/projects/2/commerce/ "Project 2: statement"
-[P3]: https://cs50.harvard.edu/web/2020/projects/3/mail/ "Project 3: statement"
-[P4]: https://cs50.harvard.edu/web/2020/projects/4/network/ "Project 4: statement"
-[P*]: https://cs50.harvard.edu/web/2020/projects/final/capstone/ "Final Project: statement"
-
-[0-search]: https://github.com/artu-hnrq/havard-cs50w/tree/0-search "Project 0: initial code"
-[1-wiki]: https://github.com/artu-hnrq/havard-cs50w/tree/1-wiki "Project 1: initial code"
-[2-commerce]: https://github.com/artu-hnrq/havard-cs50w/tree/2-commerce "Project 2: initial code"
-[3-mail]: https://github.com/artu-hnrq/havard-cs50w/tree/3-mail "Project 3: initial code"
-[4-network]: https://github.com/artu-hnrq/havard-cs50w/tree/4-network "Project 4: initial code"
-[*-capstone]: https://github.com/artu-hnrq/havard-cs50w/tree/final-capstone "Project 5: initial code"
+- [ ] Your website should have at least three pages: one for regular Google Search (which must be called index.html), one for Google Image Search, and one for Google Advanced Search.
+  - [ ] On the Google Search page, there should be links in the upper-right of the page to go to Image Search or Advanced Search. On each of the other two pages, there should be a link in the upper-right to go back to Google Search.
+- [ ] On the Google Search page, the user should be able to type in a query, click “Google Search”, and be taken to the Google search results for that page.
+  - [ ] Like Google’s own, your search bar should be centered with rounded corners. The search button should also be centered, and should be beneath the search bar.
+- [ ] On the Google Image Search page, the user should be able to type in a query, click a search button, and be taken to the Google Image search results for that page.
+- [ ] On the Google Advanced Search page, the user should be able to provide input for the following four fields (taken from Google’s own advanced search options)
+  - [ ] Find pages with… “all these words:”
+  - [ ] Find pages with… “this exact word or phrase:”
+  - [ ] Find pages with… “any of these words:”
+  - [ ] Find pages with… “none of these words:”
+- [ ] Like Google’s own Advanced Search page, the four options should be stacked vertically, and all of the text fields should be left aligned.
+  - [ ] Consistent with Google’s own CSS, the “Advanced Search” button should be blue with white text.
+  - [ ] When the “Advanced Search” button is clicked, the user should be taken to the search results page for their given query.
+- [ ] Add an “I’m Feeling Lucky” button to the main Google Search page. Consistent with Google’s own behavior, clicking this link should take users directly to the first Google search result for the query, bypassing the normal results page.
+  - [ ] You may encounter a redirect notice when using the “I’m Feeling Lucky” button. Not to worry! This is an expected consequence of a security feature implemented by Google.
+- [ ] The CSS you write should resemble Google’s own aesthetics.
 
 ### Folder structure
-For this **main** template branch,
-beside the most essential files of an open-source repository,
-there's also a project submission automation configured.
+For this project, the important file is `index.html`, which holds the main structure of your website home page. 
 
 ```
 .
@@ -103,6 +88,7 @@ there's also a project submission automation configured.
 ├── .github/                    Repo continuous automation 
 ├── .gitignore                  VCS ignored files manifest
 ├── CHANGELOG.md                Release notes description
+├── index.html                  Website home page
 ├── LICENSE                     License file
 └── README.md                   Repo readme document
 ```
