@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../css/style.css"/>
         <script type="text/javascript" src="../js/script.js" defer></script>
     </head>
-    <body>
+    <body class="flex">
         <nav>
             <menu>
                 <span></span>
@@ -20,7 +20,20 @@
 
         <header></header>
 
-        <main></main>
+        <main>
+	        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google"/>
+
+            <form action="https://google.com/search">
+                <div class="searchbar">
+                    <input name="q" type="text" value="" autofocus/>
+                </div>
+                <input type="hidden" name="tbm" value="isch">
+
+                <menu>
+                    <li><button type="submit">Image Search</button></li>
+                </menu>
+            </form>
+	    </main>
 
         <footer></footer>
     </body>
