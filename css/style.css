@@ -37,6 +37,44 @@ main > img {
     line-height: 2.75rem;
 }
 
+form {
+    padding: 0 min(3rem, 10vw);
+}
+
+form fieldset {
+    border: none;
+    text-align: left;
+}
+
+form fieldset > label {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+form fieldset span {
+    min-width: clamp(6rem, 30vw, 14rem);
+    margin: 0 1em;
+
+    font-size: clamp(0.6rem, 3vw, 1rem);
+}
+
+form fieldset input {
+    flex: 1.5;
+
+    max-width: 35rem;
+    height: 1.5rem;
+    padding: 0 1rem;
+
+    font-size: 0.8rem;
+}
+
+form fieldset *:hover {
+    font-weight: bold;
+    border-radius: 0.2rem;
+    outline: none;
+}
+
 form > menu {
     place-content: center;
     padding: 0;
@@ -58,7 +96,19 @@ button {
     user-select: none;
 }
 
+button.primary {
+    background-color: dodgerblue;
+
+    color: white;
+    font-weight: bold;
+}
+
 button:hover {
     box-shadow: 0 0.05rem 0.05rem gray;
     border: 1px solid gray;
+}
+
+button.primary:hover {
+    box-shadow: 0 0.05rem 0.05rem darkblue;
+    border: 1px solid darkblue;
 }
