@@ -16,3 +16,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Include project 0 distribution code
 - Structure static site development starting-point
 - Include required secondary pages and navigation
+- Implement main search feature

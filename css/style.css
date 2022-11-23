@@ -1,2 +1,64 @@
 @import "layout.css";
 /*@import "_debug.css";*/
+
+
+main > img {
+    max-height: 6.5rem;
+    align-self: center;
+    aspect-ratio: auto 272 / 92;
+}
+
+.searchbar {
+    width: clamp(20rem, 60vw, 40rem);
+    height: auto;
+    margin: 1rem auto;
+    padding: 0 0.5rem;
+
+    border: 0.1rem solid gray;
+    border-radius: 1.5rem;
+    box-shadow: none;
+    outline: none;
+}
+
+.searchbar:hover {
+    box-shadow: 0 0.05rem 0.05rem gray;
+}
+
+.searchbar > input {
+    width: 100%;
+    height: auto;
+    padding: 0 1rem;
+
+    border: 0;
+    outline: none;
+    background-color: transparent;
+
+    font-size: 1em;
+    line-height: 2.75rem;
+}
+
+form > menu {
+    place-content: center;
+    padding: 0;
+}
+
+button {
+    height: 2.55rem;
+    margin: 1rem 0.5rem;
+    padding: 0 1.15rem;
+
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6rem;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+button:hover {
+    box-shadow: 0 0.05rem 0.05rem gray;
+    border: 1px solid gray;
+}
