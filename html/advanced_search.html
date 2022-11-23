@@ -13,14 +13,59 @@
     <body>
         <nav>
             <menu>
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google"/>
                 <span></span>
                 <li><a href="../index.html">Back</a></li>
             </menu>
         </nav>
 
-        <header></header>
+        <header>
+            <section>
+                <h4>Advanced Search</h4>
+            </section>
+        </header>
 
-        <main></main>
+        <hr>
+
+        <main>
+            <section>
+                <form action="https://google.com/search">
+                    <div>
+                        <fieldset>
+                            <label>
+                                <span>All these words:</span>
+                                <input name="as_q" type="text" value="" autofocus/>
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <label>
+                                <span>This exact word or phrase:</span>
+                                <input name="as_epq" type="text" value=""/>
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <label>
+                                <span>Any of these words:</span>
+                                <input name="as_oq" type="text" value=""/>
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <label>
+                                <span>None of these words:</span>
+                                <input name="as_eq" type="text" value=""/>
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <menu>
+                        <li><button class="primary" type="submit">Advanced Search</button></li>
+                    </menu>
+                </form>
+            </section>
+        </main>
 
         <footer></footer>
     </body>

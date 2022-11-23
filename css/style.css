@@ -2,6 +2,23 @@
 /*@import "_debug.css";*/
 
 
+header > section > h4 {
+    margin: 0 1.85rem;
+    padding-top: 0.4rem;
+
+    color: red;
+    font-size: 1.25rem;
+    font-weight: 350;
+}
+
+nav > menu >  img {
+    height: 1.55rem;
+    margin: 0.30rem;
+
+    align-self: center;
+    aspect-ratio: auto 272 / 92;
+}
+
 main > img {
     max-height: 6.5rem;
     align-self: center;
@@ -37,6 +54,47 @@ main > img {
     line-height: 2.75rem;
 }
 
+form {
+    width: 100%;
+    max-width: clamp(50%, 50rem, 100%);
+    padding: 0 min(3rem, 10vw);
+}
+
+main > form {
+    align-self: center;
+}
+
+form fieldset {
+    border: none;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+form fieldset > label {
+    display: flex;
+    place-content: center flex-start;
+    place-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    width: 100%;
+    margin: 0;
+}
+
+form fieldset span {
+    min-width: 6rem;
+    margin: 0.5rem 1em;
+
+    flex: 1
+}
+
+form fieldset input {
+    height: 1.75rem;
+    padding: 0 1rem;
+
+    flex: auto;
+}
+
 form > menu {
     place-content: center;
     padding: 0;
@@ -58,7 +116,19 @@ button {
     user-select: none;
 }
 
+button.primary {
+    background-color: dodgerblue;
+
+    color: white;
+    font-weight: bold;
+}
+
 button:hover {
     box-shadow: 0 0.05rem 0.05rem gray;
     border: 1px solid gray;
+}
+
+button.primary:hover {
+    box-shadow: 0 0.05rem 0.05rem darkblue;
+    border: 1px solid darkblue;
 }

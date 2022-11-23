@@ -18,3 +18,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Include required secondary pages and navigation
 - Implement main search feature
 - Implement image search feature
+- Implement advanced search feature
